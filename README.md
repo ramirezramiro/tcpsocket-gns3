@@ -1,9 +1,3 @@
----
-title: TCP Socket template
-tags: Templates, Talk
-description: View the slide with "Slide Mode".
----
-
 # TCP Socket in GNS3
 
 <!-- Put the link to this slide here so people can follow -->
