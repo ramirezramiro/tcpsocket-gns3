@@ -24,8 +24,6 @@ In order to test network connectivity and simulate data traffic, the source file
 ### Usage flow
 
 ---
-
-
 ```graphviz
 digraph {
   compound=true
@@ -36,27 +34,20 @@ digraph {
   edge [ fontname="Source Sans Pro", fontsize=12 ];
 
 
-  subgraph core {
-    c [label="Beacon (4.2 or 5.0)"] [shape=box]
-  }
-  
-  c -> a [ltail=session lhead=session]
-
   subgraph cluster1 {
      concentrate=true
-    a [label="Data\nIPv6, TCP, MQTT (QoS 0)"] [shape=box]
+    a [label="UE\nIPv4, TCP"] [shape=box]
    
-    sync [label="port:(1883-21883)" shape=plaintext ]
+    sync [label="port:(50002)" shape=plaintext ]
     b -> sync  [dir="down"]
     sync -> a [dir="right"]
-    label="Scanner (BLE 4.2)"
+    label="GNS3.exe"
   }
 
   subgraph cluster2 {
     
-    b [label="MongoDB"] [shape=box]
-    sync [label="port:(1883-21883)" shape=plaintext ]
-    label="Database"
+    b [label="Server\nIPv4, TCP"] [shape=box]
+    sync [label="port:(50002)" shape=plaintext ]
   }
   
 }
