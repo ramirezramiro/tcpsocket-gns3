@@ -16,6 +16,29 @@ In order to test network connectivity and simulate data traffic, the source file
 
 ---
 
+---
+## Software Requirements
+
+- GNS3
+- VirtualBox
+- GNS3_VM
+- Ubuntu-Docker-Guest
+---
+
+
+## Required libraries
+
+
+
+### Python (2.7.18)
+
+```typescript
+import socket
+```
+
+<br>
+
+---
 
 
 ### Usage flow
@@ -49,29 +72,6 @@ digraph {
   
 }
 ```
----
-## Software Requirements
-
-- GNS3
-- VirtualBox
-- GNS3_VM
-- Ubuntu-Docker-Guest
----
-
-
-## Required libraries
-
-
-
-### Python (2.7.18)
-
-```typescript
-import socket
-```
-
-<br>
-
----
 
 ### Wrap up
 
