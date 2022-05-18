@@ -1,8 +1,5 @@
 # TCP Socket in GNS3
 
-<!-- Put the link to this slide here so people can follow -->
-slide: https://hackmd.io/p/template-Talk-slide
-
 ---
 
 GNS3 allows the use of Docker files that enable the virualization of different components (StoneWork, Open vSwitch or Ubuntu-Docker-Guest).
